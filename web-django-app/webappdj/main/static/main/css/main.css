@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(224, 224, 214);
+}
+aside{
+    float: left;
+    background-color: #4a52b8;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 1px solid #757575;
+}
+aside img{
+    width: 40px;
+    float: left;
+}
+aside .logo{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 10px;
+    text-align: right;
+}
+aside h3{
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+aside ul{
+    margin-top: -10px;
+    list-style: none;
+}
+aside h3, aside ul{
+    display: block;
+    width: 100%;
+    background-color: #78a5ca;
+    padding: 10px;
+}
+aside ul li{
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    transition: transform .3s ease;
+}
+aside a{
+    text-decoration: none;
+}
+aside i{
+    margin-right: 10px;
+    font-size: 13px;
+}
+aside ul li:hover{
+    color: #4a52b8;
+    transform: scale(1.05);
+    font-size: 16px;
+}
+main .features{
+    float: left;
+    color: lightsalmon;
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+    padding: 2.5%;
+}
+main .features h1{font-size: 50px;}
+main .features p{max-width: 400px; margin: 20px auto;}
+footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #757575;
+    padding-left: 25%;
+    width: 100%;
+    font-size: 10px;
+}
