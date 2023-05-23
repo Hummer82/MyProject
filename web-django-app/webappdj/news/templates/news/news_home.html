@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Новости сайта{% endblock %}
+
+{% block content %}
+    <div class='features'>
+        {% filter upper %}
+            <h1>Новости на сайте</h1>
+        {% endfilter %}
+        {% comment %} <p>{% lorem 1 b random %}</p> {% endcomment %}
+        {% comment %} <button class='btn btn-warning'>На страницу про нас</button> {% endcomment %}
+        
+        {% if news %}
+            {% for el in news %}
+                <div class='alert alert-warning'>
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anons }}</p>
+                </div>    
+            {% endfor %}
+        {% else %}
+                <p>Нет записей</p>
+                {# Комментарий #}
+        {% endif %}
+    </div>
+{% endblock %}

@@ -61,10 +61,15 @@ main .features{
     color: lightsalmon;
     margin-top: 100px;
     text-align: center;
-    width: 70%;
+    width: 80%;
     padding: 2.5%;
 }
-main .features h1{font-size: 50px;}
+main h1, main h3, main h2{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+main .features h1{font-size: 30px;}
 main .features p{max-width: 400px; margin: 20px auto;}
 footer{
     display: block;
@@ -75,4 +80,16 @@ footer{
     padding-left: 25%;
     width: 100%;
     font-size: 10px;
+}
+.alert-warning{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 25%;
+    text-align: left;
+}
+form{
+    margin: 20%;
+    width: 500px;
+    margin-top: 50px;
 }
