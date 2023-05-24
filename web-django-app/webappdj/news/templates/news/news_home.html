@@ -13,8 +13,13 @@
         {% if news %}
             {% for el in news %}
                 <div class='alert alert-warning'>
+                    <a href='{{ el.id }}/update' class='editing'><i class='fa fa-pencil'></i></a>
                     <h3>{{ el.title }}</h3>
                     <p>{{ el.anons }}</p>
+                    <div>
+                        <a href='{% url "news-detail" el.id %}' class='btn btn-warning'>Читать полностью</a>
+                        <a href='{{ el.id }}/delete' class='btn btn-danger delete'><i class="fa-solid fa-trash"></i></a>
+                    </div>
                 </div>    
             {% endfor %}
         {% else %}
