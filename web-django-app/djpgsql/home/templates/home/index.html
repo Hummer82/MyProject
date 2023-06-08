@@ -1,0 +1,18 @@
+{% extends 'home/layout.html' %}
+{% block content %}
+    <main><section>
+        <div class='features'>
+            {% filter upper %}
+                <h1>{{title}}</h1>
+            {% endfilter %}
+            <p>{% lorem 1 b random %}</p>
+            <button class='btn btn-warning'>На страницу про нас</button>
+            {% comment %} {% for el in values %}
+                <p>{{ el }}</p>
+            {% endfor %}
+            {% for el in obj %}
+                <p>{{ el }}</p>
+            {% endfor %} {% endcomment %}
+        </div>
+    </section></main>
+{% endblock %}

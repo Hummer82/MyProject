@@ -1,0 +1,15 @@
+
+<nav>
+    <section>
+        <ul id='navigation'>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-helmet-safety"></i>Работодателю</li></a>
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-shovel"></i>Работнику</li></a>
+            {% comment %} <a href="{% url 'home' %}"><li><i class="fa-solid fa-address-card"></i>О нас</li></a> {% endcomment %}
+            <a href="{% url 'home' %}"><li><i class="fa-solid fa-door-open"></i>Войти</li></a>
+        </ul>
+    </section>
+    <section>
+        <div id='breadcrumps'>{% block breadcrumps %}{% endblock %}</div>
+    </section>
+</nav>

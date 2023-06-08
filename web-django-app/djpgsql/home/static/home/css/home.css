@@ -1,0 +1,109 @@
+*{
+    color: black;
+    font-size: 14px;
+    background-color: antiquewhite;
+    position: relative;
+    text-align: left;
+    font-family: math;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body {
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+header, nav, main, footer{
+    width: 100%;
+    text-align: center;
+}
+header{
+    max-height: 90px;
+}
+section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 8px;
+}
+header section, nav section, main section, footer section{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    display: block;
+    max-height: 90px;
+    width: 150px;
+}
+.brend{
+    color: rgb(69, 102, 207);
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Font Awesome 5 Pro';
+}
+.features {
+    width: 100%;
+}
+h1,h2,h3,h4{
+    color: rgb(69, 102, 207);
+    text-align: center;
+    font-weight: bold;
+}
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.8em;
+}
+h4{
+    font-size: 1.5em;
+}
+#navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+}
+#navigation a{
+    width: 100%;
+    padding: 1em;
+    color: antiquewhite;
+    background-color: rgb(69, 102, 207);
+    transition: all .5s ease;
+    margin: 0.5px;
+    display: block;
+}
+#navigation a:hover{
+    background-color: antiquewhite;
+    color: rgb(69, 102, 207);
+}
+#navigation a li{
+    text-align: center;
+    color: inherit;
+    background-color: inherit;
+}
+#navigation a li i{
+    color: inherit;
+    background-color: inherit;
+    margin-right: 8px;
+}
+
+
+
